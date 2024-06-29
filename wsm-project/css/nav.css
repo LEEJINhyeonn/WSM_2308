@@ -1,0 +1,160 @@
+*::-webkit-scrollbar {
+    width: 0; /* 스크롤바 숨기기 */
+    height: 0; /* 스크롤바 숨기기 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* 가로 스크롤 숨기기 */
+    overflow-y: auto; /* 세로 스크롤 허용 */
+}
+
+/* 배경 이미지1 */
+.background-image1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+     /*이미지 크기 조정 */
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* 배경 이미지2 */
+.background-image2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* 이미지 가운데 제목 */
+.mid-title {
+    width: 100%;
+    height: 90px;
+    background-color: gray;
+    margin-top: 380px;
+    text-align: center;
+    display: flex;              /* Flexbox 사용 */
+    justify-content: center;    /* 가로축 가운데 정렬*/
+    align-items: center;        /* 세로축 가운데 정렬 */
+    padding: 4px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;   
+    font-size: 70px;
+    list-style: none; 
+
+}
+/* 상단에 회색 바 생성 */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #212121;
+    width: 100%;
+    height: 65px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    z-index: 10; /* z-index 추가 */
+}
+
+/* 로고 색, 크기변경 */
+.nav-logo {
+    font-size: 1.5em;
+    color: #dfdfdf;
+    text-decoration: none;
+}
+
+/* 상단 바 글자 정렬 */
+.nav-list {
+    font-size: 22px;
+    font-weight: 100;
+    list-style: none;   /*리스트 앞에 동그라미 없앰*/
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    font-family: "Black Han Sans", sans-serif;
+    font-style: normal;
+    align-items: center;
+    column-gap: 40px;   
+}
+
+/* 글자 색 (파랑 -> 검정) */
+.nav-link {
+    text-decoration: none;
+    color: #dfdfdf;
+    letter-spacing: 2px;
+}
+
+/* 햄버거 바 숨기기 */
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* body 글 공통 부분 */
+.main-q1, .main-q2, .main-q3 {
+    font-size: 27px;
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 200;
+    font-style: normal;   
+    color: black;
+    background-color: #a4b9c6;
+    text-align: center;
+    display: flex;                      
+    align-items: center;                
+    justify-content: center;            
+    box-shadow: 5px 5px 5px 3px gray;
+    
+}
+
+.main-q1 {
+    margin: 130px 0px 0px 400px;
+    width: 330px;
+    height: 70px;
+}
+.main-q2 {
+    margin: 20px 0px 0px 500px;
+    width: 440px;
+    height: 70px;
+}
+.main-q3 {
+    margin: 20px 0px 0px 700px;
+    width: 370px;
+    height: 70px;
+}
+
+/* 화면 크기가 디바이스 크기일 때, 햄버거 바 나타냄 */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;      
+    }
+    .nav-toggle {
+        display: block;
+        color: #dfdfdf;
+    }
+    .nav-list.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 33px;
+        left: 0;
+        width: 100%;
+        background-color: #313131;
+        padding: 0px 0px;
+        z-index: 1;
+        text-align: center;
+    }
+        
+    .nav-item {
+        width: 100%;
+        padding: 0.5rem 1rem; /* 위/아래, 왼/오른 */
+        border-bottom: 1px solid black;
+    }
+    .main-q1, .main-q2, .main-q3 {
+        margin-left: 75px;
+    }
+
+}
