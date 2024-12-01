@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higashino Keigo</title>
+    <link rel="stylesheet" href="books.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="nav container">
+            <a href="main.html"><h1 class="nav-logo">Higashino Keigo</h1></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="books.html" class="nav-link">검색</a></li>
+                <li class="nav-item"><a href="series.html" class="nav-link">시리즈</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">책 추천</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 검색 바 -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="책 제목, 발표 연도, 번역가 검색" />
+    </div>
+    <div class="book-images-container" id="bookImagesContainer">
+        <!-- 책 이미지들이 여기에 표시됩니다 -->
+    </div>
+    
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <div class="intro-image">
+                    <!-- 검색된 책 이미지가 여기에 표시됩니다 -->
+                    <div id="bookImageContainer" class="book-container"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="books.js"></script>
+</body>
+</html>
