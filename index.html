@@ -3,51 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Higashino Keigo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
-    <h1>김서연</h1>
-    <h2>이서윤</h2>
-    <h3>나지은</h3>
-    <h4>김예나</h4>
-    <h5>이진현</h5>
-    <h6>주예설</h6>
-    <h6>주예설</h6>
-    <hr>
-    <ul>
-        <li>주예설</li>
-        <li>이진현</li>
-        <li>김예나</li>
-    </ul>
-    <ol>
-        <li>송현주</li>
-        <li>김선웅</li>
-        <li>배말랭</li>
-        <li>황룡갑</li>
-        <li>조현종</li>
-        <li>육은길</li>
-        <li>박성순</li>
-        <li>홍또기</li>
-        <li>배진우</li>
-        <li>송현진</li>
-    </ol>
-    <hr>
-    <!-- // 절대주소 -->
-    <a href="//google.com">구글</a>
-    <hr>
-    <form action="">
-        <input type="text" name="txt">
-        <input type="password" name="pw" id="">
-        <input type="button" value="버튼">
-        <input type="submit" value="서브밑">
-        <input type="checkbox" name="cb" id="food1"><label for="food1">탕후루</label>
-        <input type="checkbox" name="cb" id="food2"><label for="food2">마라탕</label>
-        <input type="checkbox" name="cb" id="food3"><label for="food3">짜장면</label>
-        <input type="checkbox" name="cb" id="food4"><label for="food4">짬뽕</label>
-        <input type="radio" name="rd" id="park"><label for="park">박성래</label>
-        <input type="radio" name="rd" id="go"><label for="go">고낙은</label>
-        <input type="radio" name="rd" id="ou"><label for="ou">우호식</label>
-        <hr>
-    </form>
+    <header>
+        <nav class="nav container">
+            <a href="main.html"><h1 class="nav-logo">Higashino Keigo</h1></a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="books.html" class="nav-link">검색</a></li>
+                <li class="nav-item"><a href="series.html" class="nav-link">시리즈</a></li>
+                <li class="nav-item"><a href="random.html" class="nav-link">책 추천</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="intro">
+            <img src="/img/mainimg.jpg" alt="" class="intro-content">
+        </section>
+
+        <!-- 베스트셀러 섹션 -->
+        <section class="best-sellers">
+            <h2 class="section-title">베스트셀러 5권</h2>
+            <div class="slider-container">
+                <!-- <img src="/img/left.png" alt="left" class="next-button left-button"> -->
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <div class="book">
+                            <img src="/img/namiya.jpeg" alt="책 1">
+                        </div>
+                        <div class="book">
+                            <img src="/img/x.jpg" alt="책 2">
+                        </div>
+                        <div class="book">
+                            <img src="/img/backyahang.jpg" alt="책 3">
+                        </div>
+                        <div class="book">
+                            <img src="/img/malice.jpg" alt="책 4">
+                        </div>
+                        <div class="book">
+                            <img src="/img/redfinger.jpg" alt="책 5">
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src="/img/right.png" alt="right" class="next-button right-button"> -->
+            </div>
+        </section>
+        <!-- <h2 class="section-title">명대사</h2>
+        <section class="famous-lines">
+            <div>
+                <article class="famous-line">
+                    <p class="talk">ddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+            <div>
+                <article class="famous-line">
+                    <p class="talk">dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+            <div>
+                <article class="famous-line">
+                    <p class="talk">dddddddddddddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+            <div>
+                <article class="famous-line">
+                    <p class="talk">dddddddddddddddddddddddddddddddddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+            <div>
+                <article class="famous-line">
+                    <p class="talk">dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+            <div>
+                <article class="famous-line">
+                    <p class="talk">ddddddddddddddddddddddddddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+            <div>
+                <article class="famous-line">
+                    <p class="talk">ddddddd</p>
+                    <p class="book-name">dd</p>
+                </article>
+            </div>
+        </section> -->
+
+    </main>
+
+   
+
+    <script src="script.js"></script>
 </body>
 </html>
